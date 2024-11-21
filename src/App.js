@@ -1,19 +1,20 @@
-import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import NavBar from './Components/NavBar';
 
-
-class App extends React.Component {
-    render() {
-        return (
-
-            <
-            div >
-
-
-            <
-            /div>
-        )
-    }
+function App() {
+    return (
+        <>
+          <header>
+              <NavBar />
+          </header>
+          <main>
+            
+          </main>
+          <footer>
+            
+          </footer>
+        </>
+    );
 }
 
 export default App;
