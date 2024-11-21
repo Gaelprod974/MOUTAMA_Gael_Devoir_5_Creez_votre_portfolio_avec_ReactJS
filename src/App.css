@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.dropdown-menu-dark {
+  top: 100%; /* Menu sous la barre */
+  left: 0;   /* Aligné à gauche sous le logo */
+  position: absolute;
+  z-index: 1050; /* Assure la visibilité au-dessus d'autres éléments */
+}
