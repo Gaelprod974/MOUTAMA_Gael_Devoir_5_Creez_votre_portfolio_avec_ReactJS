@@ -1,7 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-  }
-  
   .footer {
     display: flex;
     justify-content: center; /* Centre les colonnes horizontalement */
@@ -25,3 +21,13 @@ body {
     margin: 0;
   }
   
+  @media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Change l'orientation des colonnes */
+        text-align: center; /* Centre le texte */
+    }
+
+    .footer-column {
+        margin: 10px 0; /* Ajoute de l'espacement vertical entre les colonnes */
+    }
+}
