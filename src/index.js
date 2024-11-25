@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Components/Style/Footer.css';
+import './Components/Style/NavBar.css'
 import { BrowserRouter } from 'react-router-dom';
 
 
