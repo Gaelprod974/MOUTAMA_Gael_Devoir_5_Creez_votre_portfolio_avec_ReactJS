@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Components/Style/Footer.css';
+import { BrowserRouter } from 'react-router-dom';
 
 
 
@@ -14,7 +15,10 @@ import './Components/Style/Footer.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
     <App />
+    </BrowserRouter>
+    
   </React.StrictMode>
 );
 
