@@ -1,7 +1,7 @@
   .footer {
     display: flex;
     justify-content: center; /* Centre les colonnes horizontalement */
-    align-items: center; /* Centre les colonnes verticalement (si nécessaire) */
+    align-items:start; /* Centre les colonnes verticalement (si nécessaire) */
     background-color: #333;
     color: white;
     padding: 20px;
@@ -16,7 +16,6 @@
   
   .footer-column h4 {
     margin-bottom: 10px;
-    color: #ffcc00; /* Une couleur contrastante pour les titres */
   }
   
   .footer-column p {
@@ -32,4 +31,33 @@
     .footer-column {
         margin: 10px 0; /* Ajoute de l'espacement vertical entre les colonnes */
     }
+}
+
+.liensUtiles {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments verticalement */
+}
+
+.liensUtiles a {
+  text-decoration: none; /* Retire le soulignement par défaut des liens */
+  color: inherit; /* Utilise la couleur du texte définie globalement */
+}
+
+.liensUtiles a:hover {
+  color: #007BFF; /* Change la couleur au survol */
+}
+
+
+.MesDernieresRealisations {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments verticalement */
+}
+
+.MesDernieresRealisations a {
+  text-decoration: none; /* Retire le soulignement par défaut des liens */
+  color: inherit; /* Utilise la couleur du texte définie globalement */
+}
+
+.MesDernieresRealisations a:hover {
+  color: #007BFF; /* Change la couleur au survol */
 }
