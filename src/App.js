@@ -12,26 +12,23 @@ import MentionsLegales from './Components/Pages/MentionsLegales';
 
 function App() {
     return (
-        <>
-          <header>
-            <NavBar />
-          </header>
-          <main>
-            <Routes>
-              <Route path='/' element={<Home />}></Route>
-              <Route path='/Services' element={<Services />}></Route>
-              <Route path='/PorteFolio' element={<PorteFolio />}></Route>
-              <Route path='/Contact' element={<Contact />}></Route>
-              <Route path='/MentionsLegales' element={<MentionsLegales />}></Route>
-
-
-            </Routes>
-          </main>
-          <footer>
-            <Footer />
-          </footer>
-
-        </>
+      <>
+        <header>
+          <NavBar />
+        </header>
+        <main>
+          <Routes>
+            <Route path='/' element={<Home />}></Route>
+            <Route path='/Services' element={<Services />}></Route>
+            <Route path='/PorteFolio' element={<PorteFolio />}></Route>
+            <Route path='/Contact' element={<Contact />}></Route>
+            <Route path='/MentionsLegales' element={<MentionsLegales />}></Route>
+          </Routes>
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </>
     );
 }
 
