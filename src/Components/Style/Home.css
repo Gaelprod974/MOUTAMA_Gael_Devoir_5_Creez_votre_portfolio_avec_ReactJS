@@ -1,0 +1,69 @@
+.ImageAccueil {
+    background-image: url("../../Images/hero-bg.jpg");
+    background-size: cover; /* Assure que l'image couvre toute la div */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    width: 100%; /* Ajuste la largeur à 100% */
+    height: 100vh; /* Ajuste la hauteur à la taille de la fenêtre */
+    opacity: 0.7; /* Ajustez pour un effet plus ou moins marqué */
+    justify-items: center;
+    align-content: center;
+    margin-bottom: 30px;
+    
+    
+  }
+
+  .ImageAccueil h1,.ImageAccueil h2 {
+    margin: 0;
+    line-height: 1.5;
+    color: rgb(255, 255, 255); 
+    font-weight: bolder;
+  }
+  .ImageAccueil h1 {
+
+  font-size: 4rem;
+  }
+
+  .ImageAccueil h2 {
+
+    font-size: 3rem;
+    }
+
+    .btn-en-savoir-plus {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-en-savoir-plus:hover {
+    background-color: #b30000;
+  }
+
+  
+
+  /* Section principale avec flexbox */
+  .container {
+    display: flex;
+    margin-bottom: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+    box-shadow: -10px 0 20px rgba(128, 128, 128, 0.5), /* Flou à gauche */
+                10px 0 20px rgba(128, 128, 128, 0.5),  /* Flou à droite */
+                0 10px 20px rgba(128, 128, 128, 0.5); /* Flou en bas */    
+  }
+  
+  .section1, .section2 {
+    padding: 20px;
+    margin: 10px;
+    flex: 1; /* Chaque section prend 50% de la largeur de la container */
+  }
+  
+
+  .section1 img{
+    margin-bottom: 20px;
+  }

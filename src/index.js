@@ -8,11 +8,6 @@ import './Components/Style/Footer.css';
 import './Components/Style/NavBar.css'
 import { BrowserRouter } from 'react-router-dom';
 
-
-
-
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
