@@ -1,7 +1,6 @@
   .footer {
     display: flex;
     justify-content: center; /* Centre les colonnes horizontalement */
-    align-items:start; /* Centre les colonnes verticalement (si nécessaire) */
     background-color: #333;
     color: white;
     padding: 20px;
