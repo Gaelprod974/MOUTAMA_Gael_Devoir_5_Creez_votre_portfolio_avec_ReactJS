@@ -7,4 +7,9 @@
 .Accordion{
     margin-top: 25px;
     margin-bottom: 25px;
+    text-align: left;
+}
+
+.Accordion p{
+    margin: auto;
 }
