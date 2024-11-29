@@ -1,0 +1,10 @@
+.Mentions-Legales{
+    max-width: 66.67%; /* 2/3 exprimé en pourcentage */
+    width: 100%;       /* Par défaut, utilise toute la largeur disponible */
+    margin:auto;    /* Centrer horizontalement si nécessaire */
+    text-align: center;
+}
+.Accordion{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
