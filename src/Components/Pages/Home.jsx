@@ -16,7 +16,7 @@ const Home = () => {
     <section className="section1">
       <h3>A propos </h3>
       <hr />
-      <img src={MonImage} alt="Photo de John Doe" />
+      <img src={MonImage} alt="John Doe" />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

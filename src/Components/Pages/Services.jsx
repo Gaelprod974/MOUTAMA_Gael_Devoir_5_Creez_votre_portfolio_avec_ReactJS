@@ -1,9 +1,12 @@
+import Accordion from 'react-bootstrap/Accordion';
 
 const Services = () => {
   return (
-    <div>
-      <h1>Mes Services</h1>
+    <>
+    <div className="Mes-Services">
+      <h1>Mes Services</h1>  
     </div>
+    </>
   )
   }
   
