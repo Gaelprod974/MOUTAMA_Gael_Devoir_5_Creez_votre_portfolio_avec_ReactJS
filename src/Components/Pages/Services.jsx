@@ -25,8 +25,7 @@ const Services = () => {
           />
         <Card.Title className="CardTitle">UX Design</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          L'UX Design est une discipline que consiste à concevoir des produits (site web, applications mobiles, logiciels, objets connectés, etc.) en plaçant l'utilisateur au centre des préocupations. L'objectif est de rendre l'experience utilisateur la plus fluide et agréable possible.
         </Card.Text>
       </Card.Body>
     </Card>
@@ -40,8 +39,7 @@ const Services = () => {
           />
         <Card.Title className="CardTitle">Développement web</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          Le développement de sites wed consiste a créer des sites internet en utilisant des langages de programmation (HTML, CSS, JavaScript, PHP, etc.) et des frameworks (Bootstrap, React, Angular, etc.).
         </Card.Text>
       </Card.Body>
     </Card>
@@ -55,8 +53,7 @@ const Services = () => {
           />
         <Card.Title className="CardTitle">Référencement</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          Le référencement naturel (SEO) est une technique que consiste à optimiser un site web pour le faire remonter dans les résultats des moteurs de recherche (Google, Bing, Yahoo, etc.). L'objectif est d'attirer un maximum de visiteurs qualifiés sur le site.
         </Card.Text>
       </Card.Body>
     </Card>
