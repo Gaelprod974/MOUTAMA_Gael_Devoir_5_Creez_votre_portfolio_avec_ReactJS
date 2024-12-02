@@ -1,0 +1,103 @@
+.TitreContact{
+    text-align: center;
+    
+
+}
+.TitreContact hr{
+    max-width: 500px; /* Définit la largeur maximale */
+    width: 100%; /* Permet à l'élément de s'adapter à l'espace disponible */
+    margin: 0 auto;
+    border: none; /* Retire la bordure par défaut */
+    height: 5px; /* Épaisseur de la ligne */
+    background-color: #062a61; /* Couleur de la ligne */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+
+ 
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+}
+
+.container hr{
+    width: 100%; /* Permet à l'élément de s'adapter à l'espace disponible */
+    margin: 0 auto;
+    border: none; /* Retire la bordure par défaut */
+    height: 4px; /* Épaisseur de la ligne */
+    background-color: #062a61; /* Couleur de la ligne */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  } 
+
+  .form-section, .info-section {
+    padding: 10px;
+    border-radius: 10px; /* Conserve les coins arrondis */
+    flex: 1;
+    border: none; /* Enlève toute bordure */
+  }
+.form-section h2, .info-section h2 {
+    margin-top: 0;
+}
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-section input, .form-section textarea, .form-section button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-section button {
+    width: 100px; /* Largeur fixe de 100px */
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    margin: 0 auto; /* Centrer horizontalement */
+    display: block; /* Nécessaire pour que margin: auto fonctionne */
+  }
+  
+  .form-section button:hover {
+    background-color: #0056b3;
+  }
+  
+.info-section h4, .info-section p {
+    margin: 5px 0;
+}
+iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+
+    .TitreContact{
+
+        padding: 20px;
+    
+    }
+    .container {
+      flex-direction: column; /* Les sections s'empilent */
+      gap: 20px; /* Espace entre les sections */
+      border: none;
+      box-shadow: none;
+      padding: 15px;
+    }
+  
+    .form-section, .info-section {
+      width: 100%; /* Les sections occupent toute la largeur */
+    }
+  
+   
+  }
+  
