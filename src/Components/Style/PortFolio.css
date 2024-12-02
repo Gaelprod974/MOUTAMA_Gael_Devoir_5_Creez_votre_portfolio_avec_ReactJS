@@ -1,0 +1,27 @@
+.PorteFolio h1,p{
+  text-align: center;
+}
+.PorteFolio hr{
+  max-width: 500px; /* Définit la largeur maximale */
+    width: 100%; /* Permet à l'élément de s'adapter à l'espace disponible */
+    margin: 0 auto;
+    border: none; /* Retire la bordure par défaut */
+    height: 5px; /* Épaisseur de la ligne */
+    background-color: #062a61; /* Couleur de la ligne */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .PorteFolio hr{
+    max-width: 200px; /* Définit la largeur maximale */
+   }
+
+   .container {
+    width: 95% !important;
+  }
+  
+   
+  }
+    

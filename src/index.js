@@ -10,6 +10,7 @@ import './Components/Style/NavBar.css'
 import './Components/Style/MentionsLegales.css';
 import './Components/Style/Services.css';
 import './Components/Style/Contact.css';
+import './Components/Style/PortFolio.css';
 
 
 
