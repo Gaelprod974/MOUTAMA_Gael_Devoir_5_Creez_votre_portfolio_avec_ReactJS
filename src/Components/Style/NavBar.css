@@ -1,12 +1,34 @@
 .name{
-    font-size:large;
     text-transform: uppercase;
+    color:  white;
+}
 
+.navbar-toggler {
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-color: white;  /* Choisissez la couleur que vous voulez */
 }
 .nav-link-custom{
     padding-right: 15px;
     text-decoration: none;
-    font-size:large;
-    color: black;
+    color: white;
     text-transform: uppercase;
+}
+
+  
+.nav-link-custom.active {
+    color: yellow;
+}
+
+  
+
+@media (max-width: 768px) {
+    .nav-link-custom{
+        padding-right: 15px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+    }
 }

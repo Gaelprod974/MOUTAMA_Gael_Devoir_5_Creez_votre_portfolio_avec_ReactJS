@@ -2,16 +2,15 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { Link} from 'react-router-dom';
-
+import { NavLink } from 'react-router-dom';
 
 function OffcanvasExample() {
   return (
     <>
       {['md'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+        <Navbar key={expand} expand={expand} className="bg-dark mb-3">
           <Container fluid>
-            <div className='name'>John Doe</div>
+            <div className="name">John Doe</div>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -25,12 +24,47 @@ function OffcanvasExample() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Link to="/"className="nav-link-custom">Accueil</Link>
-                  <Link to="/Services"className="nav-link-custom">Services</Link>
-                  <Link to="/PorteFolio"className="nav-link-custom">Portfolio</Link>
-                  <Link to="/Contact"className="nav-link-custom">Contact</Link>
-                  <Link to="/MentionsLegales"className="nav-link-custom">Mention Légales</Link>
-                </Nav>               
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      isActive ? 'nav-link-custom active' : 'nav-link-custom'
+                    }
+                  >
+                    Accueil
+                  </NavLink>
+                  <NavLink
+                    to="/Services"
+                    className={({ isActive }) =>
+                      isActive ? 'nav-link-custom active' : 'nav-link-custom'
+                    }
+                  >
+                    Services
+                  </NavLink>
+                  <NavLink
+                    to="/PorteFolio"
+                    className={({ isActive }) =>
+                      isActive ? 'nav-link-custom active' : 'nav-link-custom'
+                    }
+                  >
+                    Portfolio
+                  </NavLink>
+                  <NavLink
+                    to="/Contact"
+                    className={({ isActive }) =>
+                      isActive ? 'nav-link-custom active' : 'nav-link-custom'
+                    }
+                  >
+                    Contact
+                  </NavLink>
+                  <NavLink
+                    to="/MentionsLegales"
+                    className={({ isActive }) =>
+                      isActive ? 'nav-link-custom active' : 'nav-link-custom'
+                    }
+                  >
+                    Mention Légales
+                  </NavLink>
+                </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
