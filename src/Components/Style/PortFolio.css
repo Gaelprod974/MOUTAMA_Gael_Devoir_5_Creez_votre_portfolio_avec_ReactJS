@@ -1,3 +1,8 @@
+.PorteFolio img{
+  width: 100%; /* L'image occupera toute la largeur de son conteneur */
+  height: auto; /* Garde les proportions de l'image */
+}
+
 .PorteFolio h1,p{
   text-align: center;
 }

@@ -6,6 +6,8 @@ import imagebienetre from '../../Images/portfolio/espace-bien-etre.jpg'
 import imageseo from '../../Images/portfolio/seo.jpg'
 import imagecoder from '../../Images/portfolio/coder.jpg'
 import imagescreens from '../../Images/portfolio/screens.jpg'
+import Banner from "../../Images/banner.jpg"; // Import de l'image locale
+
 
 
 const projects = [
@@ -62,6 +64,8 @@ const PorteFolio = () => {
   return (
     <>
     <div className='PorteFolio'>
+    <img src={Banner} alt="banner" />
+
       <h1>Porte Folio</h1>
       <p>Voici quelques-unes de mes réalisations.</p>
       <hr />
