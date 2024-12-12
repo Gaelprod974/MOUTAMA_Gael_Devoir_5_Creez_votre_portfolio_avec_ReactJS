@@ -3,16 +3,6 @@
     
 
 }
-.TitreContact hr{
-    max-width: 500px; /* Définit la largeur maximale */
-    width: 100%; /* Permet à l'élément de s'adapter à l'espace disponible */
-    margin: 0 auto;
-    border: none; /* Retire la bordure par défaut */
-    height: 5px; /* Épaisseur de la ligne */
-    background-color: #062a61; /* Couleur de la ligne */
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
 
 
 
@@ -24,15 +14,7 @@
     gap: 10px;
 }
 
-.container hr{
-    width: 100%; /* Permet à l'élément de s'adapter à l'espace disponible */
-    margin: 0 auto;
-    border: none; /* Retire la bordure par défaut */
-    height: 4px; /* Épaisseur de la ligne */
-    background-color: #062a61; /* Couleur de la ligne */
-    margin-top: 20px;
-    margin-bottom: 20px;
-  } 
+
 
   .form-section, .info-section {
     padding: 10px;
@@ -78,7 +60,14 @@ iframe {
     border: none;
     border-radius: 5px;
 }
+.info-section p{
+  margin: auto;
+  text-align: left;
+}
 
+iframe{
+  margin-top: 25px;
+}
 @media (max-width: 768px) {
 
     .TitreContact{
@@ -98,6 +87,9 @@ iframe {
       width: 100%; /* Les sections occupent toute la largeur */
     }
   
+    .ContactTitreHr{
+      width: 200px !important;
+    }
    
   }
   

@@ -3,6 +3,8 @@ import UXImg from "../../Images/brush.svg";
 import DEVImg from "../../Images/code-slash.svg";
 import REFImg from "../../Images/search.svg";
 import Card from 'react-bootstrap/Card';
+import '../../Components/Style/Services.css';
+
 
 
 
@@ -13,11 +15,11 @@ const Services = () => {
       <img src={Banner} alt="banner" />
       <h1>Mon offre de Services</h1>  
       <p>Voici les prestations sur lesquelles je peux intervenir</p>
-      <hr />
+      <hr className="border-primary" />
     </div>
     <div className="cards-container">
   <div className="Card">
-    <Card style={{ width: '18rem' }}>
+    <Card className="ServiceCard">
       <Card.Body>
       <img 
             src={UXImg} 
@@ -31,7 +33,7 @@ const Services = () => {
     </Card>
   </div>
   <div className="Card">
-    <Card style={{ width: '18rem' }}>
+    <Card className="ServiceCard" >
       <Card.Body>
        <img 
             src={DEVImg} 
@@ -45,7 +47,7 @@ const Services = () => {
     </Card>
   </div>
   <div className="Card">
-    <Card style={{ width: '18rem' }}>
+    <Card className="ServiceCard" >
       <Card.Body>
         <img 
             src={REFImg} 

@@ -12,11 +12,11 @@ const Home = () => {
       <button className="btn-en-savoir-plus">En savoir plus</button>
 
     </div>
-    <div className="container">
-    <section className="section1">
+    <div className="row">
+    <section className="col-md-5">
       <h3>A propos </h3>
-      <hr />
-      <img src={MonImage} alt="John Doe" />
+      <hr className="border-primary"/>
+      <img className='ImageAPropos' src={MonImage} alt="John Doe" />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -31,9 +31,9 @@ const Home = () => {
       </p>
       
     </section>
-    <section className="section2">
+    <section className="col-md-5">
       <h3>Mes compétences</h3>
-      <hr />
+      <hr className="border-primary"/>
       <div>
         <h4>HTML5 90%</h4>
         <ProgressBar variant="danger" now={90} />

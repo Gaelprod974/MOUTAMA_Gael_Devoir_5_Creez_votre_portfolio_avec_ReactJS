@@ -1,35 +1,26 @@
-  .footer {
-    display: flex;
-    justify-content: center; /* Centre les colonnes horizontalement */
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-  
-  .footer-column {
-    flex: 1; /* Chaque colonne prend un tiers de l'espace disponible */
-    margin: 0 10px; /* Espacement entre les colonnes */
-  }
-  
-  .footer-column h4 {
-    margin-bottom: 10px;
-  }
-  
-  .footer-column p {
-    margin: 0;
-  }
-  
-  @media (max-width: 768px) {
-    .footer {
-        flex-direction: column; /* Change l'orientation des colonnes */
-        text-align: center; /* Centre le texte */
-    }
+.footer {
+  display: flex;
+  justify-content: center; /* Centre les colonnes horizontalement */
+  background-color: #333;
+  color: white;
+  padding: 20px;
+ 
+  align-items: start;
+  gap: 20px;
+}
 
-    .footer-column {
-        margin: 10px 0; /* Ajoute de l'espacement vertical entre les colonnes */
-    }
+.footer-column {
+  flex: 0 0 20%; /* Chaque colonne prend 25% de l'espace disponible */
+  text-align: left; /* Aligne tout le texte à gauche dans la colonne */
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  margin: 0;
+  padding: 5px 0; /* Optionnel : espace entre les paragraphes */
 }
 
 .liensUtiles {
@@ -46,7 +37,6 @@
   color: #007BFF; /* Change la couleur au survol */
 }
 
-
 .MesDernieresRealisations {
   display: flex;
   flex-direction: column; /* Aligne les éléments verticalement */
@@ -59,4 +49,49 @@
 
 .MesDernieresRealisations a:hover {
   color: #007BFF; /* Change la couleur au survol */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+
+.logo {
+  width: 30px;  /* Vous pouvez ajuster la taille des logos */
+  height: auto;  /* Assure que les logos gardent leurs proportions */
+  margin-top: 20px;
+}
+
+.coordo-P{
+  text-align: start;
+}
+
+
+.logo-container .logo:hover {
+  filter: brightness(1.5); /* Rend l'image plus claire au survol */
+}
+@media (max-width: 768px) {
+  .footer {
+      flex-direction: column; /* Change l'orientation des colonnes */
+      text-align: center; /* Centre le texte */
+      padding-left:50px ;
+  }
+
+  .footer-column {
+      margin: 10px 0; /* Ajoute de l'espacement vertical entre les colonnes */
+      text-align: left; /* Aligne le texte à gauche dans chaque colonne pour les petits écrans */
+  }
+
+  .ImageAccueil h1 {
+    font-size: 8vw;  /* Utilise 6% de la largeur de la fenêtre */
+  }
+
+  .ImageAccueil h2 {
+    font-size: 6vw;  /* Utilise 5% de la largeur de la fenêtre */
+  }
+
+  .logo-container {
+    justify-content: start;
+  }
 }

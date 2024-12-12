@@ -3,12 +3,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { NavLink } from 'react-router-dom';
+import '../Components/Style/NavBar.css'
+
 
 function OffcanvasExample() {
   return (
     <>
       {['md'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-dark mb-3">
+        <Navbar key={expand} expand={expand} className="bg-dark">
           <Container fluid>
             <div className="name">John Doe</div>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -18,9 +20,7 @@ function OffcanvasExample() {
               placement="end"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
-                </Offcanvas.Title>
+                
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">

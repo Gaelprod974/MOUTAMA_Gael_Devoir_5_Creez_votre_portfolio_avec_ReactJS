@@ -9,8 +9,6 @@
     justify-items: center;
     align-content: center;
     margin-bottom: 30px;
-    
-    
   }
 
   .ImageAccueil h1,.ImageAccueil h2 {
@@ -20,16 +18,14 @@
     font-weight: bolder;
   }
   .ImageAccueil h1 {
-
   font-size: 4rem;
   }
 
   .ImageAccueil h2 {
-
     font-size: 3rem;
     }
 
-    .btn-en-savoir-plus {
+  .btn-en-savoir-plus {
     background-color: #ff0000;
     color: white;
     border: none;
@@ -44,26 +40,54 @@
     background-color: #b30000;
   }
 
-  
-
-  /* Section principale avec flexbox */
-  .container {
-    display: flex;
+  hr{
+    max-width: 500px; /* Définit la largeur maximale */
+    width: 100%; /* Permet à l'élément de s'adapter à l'espace disponible */
+    margin: 0 auto;
+    border: none; /* Retire la bordure par défaut */
+    height: 5px; /* Épaisseur de la ligne */
+    background-color: #062a61; /* Couleur de la ligne */
+    margin-top: 20px;
     margin-bottom: 50px;
-    margin-right: 150px;
-    margin-left: 150px;
-    box-shadow: -10px 0 20px rgba(128, 128, 128, 0.5), /* Flou à gauche */
-                10px 0 20px rgba(128, 128, 128, 0.5),  /* Flou à droite */
-                0 10px 20px rgba(128, 128, 128, 0.5); /* Flou en bas */    
   }
   
-  .section1, .section2 {
-    padding: 20px;
-    margin: 10px;
-    flex: 1; /* Chaque section prend 50% de la largeur de la container */
-  }
   
+  
+  .ImageAPropos {
+    width: 100%; /* L'image occupera toute la largeur disponible */
+    height: auto; /* Conservera les proportions de l'image */
+    margin: 0 auto; /* Centrer l'image horizontalement si nécessaire */
+    display: block; /* S'assurer que l'image est centrée en bloc */
+  }
 
-  .section1 img{
-    margin-bottom: 20px;
+  .row {
+    display: flex; /* Active flexbox */
+    justify-content: center; /* Centre les éléments horizontalement */
+    width: 100vw; /* Largeur ajustée à 95% de la fenêtre */
+ 
+}
+
+.apropos{
+  background: none !important;
+  color: black !important;
+}
+
+
+ @media (max-width: 768px) {
+  hr{
+    max-width: 100%; /* Définit la largeur maximale */
   }
+  .row {
+    width: 90vw; /* Largeur ajustée à 95% de la fenêtre */
+    margin: auto !important;
+    margin-bottom: 50px !important;
+  }
+
+  .col-md-5{
+    margin-bottom: 50px !important;
+
+  }
+   
+  
+  
+}
