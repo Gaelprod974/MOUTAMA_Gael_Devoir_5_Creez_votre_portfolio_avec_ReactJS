@@ -1,3 +1,4 @@
+import '../../Components/Style/Contact.css';
 
 const Contact = () => {
   return (
@@ -5,14 +6,14 @@ const Contact = () => {
     <div className="TitreContact">
       <h1>Contact</h1>
       <p>Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</p>
-      <hr />
+      <hr className='border-primary ContactTitreHr'/>
     </div>
 
     <div className="container">
       {/* Section Formulaire */}
       <div className="form-section">
         <h2>Formulaire de contact</h2>
-        <hr />
+        <hr className='border-primary'/>
         <form>
           <input type="text" name="nom" placeholder="Votre nom" required />
           <input type="email" name="email" placeholder="Votre adresse email" required />
@@ -26,7 +27,7 @@ const Contact = () => {
       {/* Section Coordonnées */}
       <div className="info-section">
         <h2>Mes coordonnées</h2>
-        <hr />
+        <hr className='border-primary'/>
         <h4>John Doe</h4>
         <p>40 rue Laure Diebold</p>
         <p>69009 Lyon, France</p>

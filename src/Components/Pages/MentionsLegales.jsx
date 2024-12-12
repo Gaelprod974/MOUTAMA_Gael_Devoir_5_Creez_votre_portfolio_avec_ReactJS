@@ -1,10 +1,13 @@
 import Accordion from 'react-bootstrap/Accordion';
+import '../../Components/Style/MentionsLegales.css';
+
 
 const MentionsLegales = () => {
   return (
     <>
     <div className="Mentions-Legales">
-      <h1>Mentions Légales</h1>  
+      <h1>Mentions Légales</h1> 
+      <hr className='border-primary MentionHr'/> 
       <div className='Accordion'>
       <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">

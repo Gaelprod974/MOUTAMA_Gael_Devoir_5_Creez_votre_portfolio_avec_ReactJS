@@ -1,19 +1,24 @@
 .Services{
   text-align: center; /* Centre le texte */
 }
-.Services hr{
-  max-width: 500px; /* Définit la largeur maximale */
-  width: 100%; /* Permet à l'élément de s'adapter à l'espace disponible */
+
+
+.border-primary {
+  width: 100%;
   margin: 0 auto;
   border: none; /* Retire la bordure par défaut */
   height: 5px; /* Épaisseur de la ligne */
-  background-color: #062a61; /* Couleur de la ligne */
   margin-top: 20px;
   margin-bottom: 20px;
+  background-color: #0d6efd; /* Valeur de la couleur primary Bootstrap (bleu) */
+  height: 5px; /* Garder une épaisseur définie pour la ligne */
+  opacity: 1 !important;
 }
+
 .Services img{
   width: 100%; /* L'image occupera toute la largeur de son conteneur */
   height: auto; /* Garde les proportions de l'image */
+  margin-bottom: 50px;
 }
 
 .cards-container {
@@ -28,6 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; /* Centre horizontalement */
+    height: 350px;
   }
 
  .Card {
@@ -66,7 +72,9 @@
 
   }
 
-  
+  .ServiceCard{
+    width: 95vw;
+  }
 
   .Card {
       width: 100%; /* Les cartes occupent toute la largeur disponible */
@@ -74,6 +82,11 @@
       margin-bottom: 10px; /* Ajoute un espacement en bas entre les cartes */
       box-sizing: border-box; /* Assure que les bordures et le padding sont inclus dans la largeur */
 
+  }
+
+  .Services hr {
+    
+    width: 200px;
   }
 
  

@@ -22,7 +22,9 @@
     color: yellow;
 }
 
-  
+.mb-3 {
+    margin-bottom: 0px;
+}
 
 @media (max-width: 768px) {
     .nav-link-custom{
@@ -30,5 +32,9 @@
         text-decoration: none;
         color: rgb(0, 0, 0);
         text-transform: uppercase;
+    }
+
+    .offcanvas.offcanvas-end.show{
+        height: 300px;
     }
 }

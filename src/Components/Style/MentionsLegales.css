@@ -12,4 +12,17 @@
 
 .Accordion p{
     margin: auto;
+    text-align: left;
+}
+@media (max-width: 768px) {
+    .MentionHr {
+        width: 50vw; /* Ajustement dynamique en fonction de la largeur */
+        margin: auto; /* Centre horizontalement la ligne */
+    }
+
+    .Accordion {
+        margin: 15px auto; /* Ajustement des marges pour petits écrans */
+        max-width: 95vw;    /* Réduction de la largeur maximale */
+    }
+
 }
