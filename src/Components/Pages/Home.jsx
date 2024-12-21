@@ -35,61 +35,64 @@ const Home = () => {
         <button className="btn-en-savoir-plus" onClick={handleShow}>En savoir plus</button>
       </div>
       <div className="row">
-        <section className="col-md-5">
-          <h3>A propos </h3>
-          <hr className="border-primary" />
-          <img className='ImageAPropos' src={MonImage} alt="John Doe" />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </section>
-        <section className="col-md-5">
-          <h3>Mes compétences</h3>
-          <hr className="border-primary" />
-          <div>
-            <h4>HTML5 90%</h4>
-            <ProgressBar variant="danger" now={90} />
-            <h4>CSS3 80%</h4>
-            <ProgressBar variant="info" now={80} />
-            <h4>JAVASCRIPT 70%</h4>
-            <ProgressBar variant="warning" now={70} />
-            <h4>PHP 60%</h4>
-            <ProgressBar variant="success" now={60} />
-            <h4>REACT 50%</h4>
-            <ProgressBar variant="primary" now={50} />
-          </div>
-        </section>
-      </div>
+  <section className="col-md-5 cadre">
+    <h3>A propos </h3>
+    <hr className="border-primary" />
+    <img className='ImageAPropos' src={MonImage} alt="John Doe" />
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </section>
+  <section className="col-md-5 cadre">
+    <h3>Mes compétences</h3>
+    <hr className="border-primary" />
+    <div>
+      <h4>HTML5 90%</h4>
+      <ProgressBar variant="danger" now={90} />
+      <h4>CSS3 80%</h4>
+      <ProgressBar variant="info" now={80} />
+      <h4>JAVASCRIPT 70%</h4>
+      <ProgressBar variant="warning" now={70} />
+      <h4>PHP 60%</h4>
+      <ProgressBar variant="success" now={60} />
+      <h4>REACT 50%</h4>
+      <ProgressBar variant="primary" now={50} />
+    </div>
+  </section>
+</div>
 
-      {/* Modale pour afficher les données GitHub */}
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+
+      <Modal show={show} onHide={handleClose} dialogClassName="modal-dark custom-modal">
+        <Modal.Header closeButton className="bg-dark text-light">
           <Modal.Title>Mon profil GitHub</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="bg-dark text-light">
           {githubData ? (
-            <div>
-              <img src={githubData.avatar_url} alt="Avatar GitHub" className="img-fluid" />
-              <p><strong>Nom d'utilisateur :</strong> {githubData.name}</p>
-              <p><strong>Bio :</strong> {githubData.bio}</p>
-              <p><strong>Nombre de repositories publics :</strong> {githubData.public_repos}</p>
-              <p><strong>Followers :</strong> {githubData.followers}</p>
-              <p><strong>Following :</strong> {githubData.following}</p>
+            <div className="d-flex align-items-center">
+              {/* Avatar prend 50% */}
+              <div className="flex-grow-1" style={{ flexBasis: '50%' }}>
+                <img 
+                  src={githubData.avatar_url} 
+                  alt="Avatar GitHub" 
+                  className="img-fluid" 
+                  style={{ width: '100%', height: 'auto' }} 
+                />
+              </div>
+              {/* Texte prend le reste */}
+              <div className="flex-grow-1" style={{ flexBasis: '50%' }}>
+                <p><strong>Nom d'utilisateur :</strong> {githubData.name}</p>
+                <p><strong>Bio :</strong> {githubData.bio}</p>
+                <p><strong>Nombre de repositories publics :</strong> {githubData.public_repos}</p>
+                <p><strong>Followers :</strong> {githubData.followers}</p>
+                <p><strong>Following :</strong> {githubData.following}</p>
+              </div>
             </div>
           ) : (
             <p>Chargement des données...</p>
           )}
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer className="bg-dark text-light">
           <Button variant="secondary" onClick={handleClose}>
             Fermer
           </Button>

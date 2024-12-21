@@ -1,93 +1,122 @@
-.ImageAccueil {
-    background-image: url("../../Images/hero-bg.jpg");
-    background-size: cover; /* Assure que l'image couvre toute la div */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    width: 100%; /* Ajuste la largeur à 100% */
-    height: 100vh; /* Ajuste la hauteur à la taille de la fenêtre */
-    opacity: 0.7; /* Ajustez pour un effet plus ou moins marqué */
-    justify-items: center;
-    align-content: center;
-    margin-bottom: 30px;
-  }
-
-  .ImageAccueil h1,.ImageAccueil h2 {
-    margin: 0;
-    line-height: 1.5;
-    color: rgb(255, 255, 255); 
-    font-weight: bolder;
-  }
-  .ImageAccueil h1 {
-  font-size: 4rem;
-  }
-
-  .ImageAccueil h2 {
-    font-size: 3rem;
-    }
-
-  .btn-en-savoir-plus {
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-
-  .btn-en-savoir-plus:hover {
-    background-color: #b30000;
-  }
-
-  hr{
-    max-width: 500px; /* Définit la largeur maximale */
-    width: 100%; /* Permet à l'élément de s'adapter à l'espace disponible */
-    margin: 0 auto;
-    border: none; /* Retire la bordure par défaut */
-    height: 5px; /* Épaisseur de la ligne */
-    background-color: #062a61; /* Couleur de la ligne */
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  
-  
-  
-  .ImageAPropos {
-    width: 100%; /* L'image occupera toute la largeur disponible */
-    height: auto; /* Conservera les proportions de l'image */
-    margin: 0 auto; /* Centrer l'image horizontalement si nécessaire */
-    display: block; /* S'assurer que l'image est centrée en bloc */
-  }
-
-  .row {
-    display: flex; /* Active flexbox */
-    justify-content: center; /* Centre les éléments horizontalement */
-    width: 100vw; /* Largeur ajustée à 95% de la fenêtre */
- 
+/* Style personnalisé pour la modale */
+.custom-modal .modal-dialog {
+  max-width: 80%; /* Largeur par défaut de la modale */
+  width: auto;
 }
 
-.apropos{
+
+/* Media query pour les écrans en dessous de 768px */
+@media (max-width: 768px) {
+  .custom-modal .modal-body {
+    display: block; /* Forcer un affichage en bloc */
+  }
+
+  .custom-modal .d-flex {
+    flex-direction: column; /* Empiler l'avatar et le texte sur une seule colonne */
+    align-items: center; /* Centrer le contenu */
+  }
+
+  .custom-modal .flex-grow-1 {
+    flex-basis: 100%; /* Chaque section prend 100% de la largeur sur mobile */
+    text-align: center; /* Centrer le texte */
+  }
+
+  .custom-modal .img-fluid {
+    max-width: 100%; /* S'assurer que l'image ne dépasse pas la largeur de son conteneur */
+    height: auto; /* Maintenir le ratio de l'image */
+  }
+}
+
+/* Style de base pour l'image de l'accueil */
+.ImageAccueil {
+  background-image: url("../../Images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.7;
+  justify-items: center;
+  align-content: center;
+  margin-bottom: 30px;
+}
+
+.ImageAccueil h1, .ImageAccueil h2 {
+  margin: 0;
+  line-height: 1.5;
+  color: rgb(255, 255, 255); 
+  font-weight: bolder;
+}
+
+.ImageAccueil h1 {
+  font-size: 4rem;
+}
+
+.ImageAccueil h2 {
+  font-size: 3rem;
+}
+
+/* Bouton "En savoir plus" */
+.btn-en-savoir-plus {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-en-savoir-plus:hover {
+  background-color: #b30000;
+}
+
+/* Style de la ligne hr */
+hr {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  height: 5px;
+  background-color: #062a61;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* Style pour l'image dans la section "A propos" */
+.ImageAPropos {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Flexbox pour les colonnes */
+.row {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.apropos {
   background: none !important;
   color: black !important;
 }
 
-
- @media (max-width: 768px) {
-  hr{
-    max-width: 100%; /* Définit la largeur maximale */
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+  hr {
+    max-width: 100%;
   }
+
   .row {
-    width: 90vw; /* Largeur ajustée à 95% de la fenêtre */
+    width: 90vw;
     margin: auto !important;
     margin-bottom: 50px !important;
   }
 
-  .col-md-5{
+  .col-md-5 {
     margin-bottom: 50px !important;
-
   }
-   
-  
-  
 }
